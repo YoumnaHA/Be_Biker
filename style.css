@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
+
+body {
+  margin : 0;
+  font-family: 'Muli', 'Arial', 'sans-serif';
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Header */
+.header {
+  background-color: black;
+  padding: 10px 0;
+}
+
+.wrapper {
+  width : 90%;
+  max-width : 1100px;
+  margin : 0 auto;
+}
+
+.header .wrapper {
+  display: flex;
+}
+
+.nav__link {
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+/*Affichage desktop*/
+@media screen and (min-width:769px) {
+  .nav__link:hover {
+    background-color: #232425;
+    padding : 53px 12px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow : 1;
+  }
+
+  .nav__list {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    letter-spacing: 2px;
+  }
+
+  .nav__link {
+    padding : 53px 12px;
+  }
+}
+/*Fin header */
+
+/*Code commun à toutes les pages du site */
+h1 {
+  font-size : 56px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap : wrap;
+}
+
+.grid--gutters {
+ margin: 0 -16px;
+}
+
+.grid__item {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.grid__item--1-1 {
+  flex-basis: 100%;
+}
+
+.grid__item--1-2 {
+  flex-basis: 50%;
+}
+
+.grid__item--1-3 {
+  flex-basis: calc(100%/3);
+}
+
+.grid__item--1-4 {
+  flex-basis: 25%;
+}
+
+.grid__item--2-3 {
+  flex-basis: calc(2*100%/3);
+}
+
+.grid--gutters .grid__item {
+ padding: 0 16px;
+ box-sizing: border-box;
+}
+
+/* Page index */
+.home-section {
+      background-image:
+       linear-gradient(to right, #fff 0%, #fff 50%, rgba(255, 255, 255, 0) 50%),
+       url(images/home-01.jpg);
+      background-size: cover ;
+      height: 1100px;
+      display: flex;
+      padding: 0;
+  }
+.home-section .wrapper {
+   display: flex;
+   align-items: center;
+}
+
+.homeH1 {
+   font-size: 64px;
+   display: flex;
+   justify-content: flex-end;
+   width: 50%;
+}
+.home-section1{
+   background-image: url(images/home-04.jpg);
+   background-size: cover;
+   height: 1040px;
+   padding: 40px 0px 40px 0px;
+   margin: 0;
+   align-items: center;
+   color: white;
+}
+.grid__item--home2 {
+   flex-direction: column;
+   background-color: #39d6c0;
+   color: black;
+   height: 300px;
+}
+.grid__item--home3 {
+   flex-direction: column;
+   background-color :white;
+   color : black;
+   height: 330px;
+}
+.buttonhome-1 {
+   background-color:white ;
+   color:black;
+   text-decoration: none;
+   padding: 16px 32px;
+   border-radius: 5px;
+   font-size: 16px;
+   margin-top: 10px;
+}
+.grid__home3--1 {
+   flex-direction: column;
+}
+.image {
+   padding-bottom: 30px;
+   border-bottom: 1px solid grey;
+   max-width: 50%;
+}
+.buttonhome-2 {
+   background-color: #39d6c0 ;
+   color: white;
+   text-decoration: none;
+   padding: 16px 32px;
+   border-radius: 5px;
+   font-size: 16px;
+   width: 110px;
+   margin: auto;
+}
+.grid__item--background {
+   background-size: cover;
+   background-position: center;
+}
+.photo3 {
+   background-image: url(images/home-02.jpg);
+}
+.photo4 {
+   background-image: url(images/home-03.jpg);
+}
+.photo5 {
+   height: 700px;
+   background-image: url(images/home-05.jpg);
+}
+.photo6 {
+   height: 700px;
+   background-image: url(images/home-06.jpg);
+}
+.photo7 {
+   height: 700px;
+   background-image: url(images/home-07.jpg);
+}
+.grid--gutters .grid__item--1-3 {
+   padding: 0 16px;
+   box-sizing: border-box;
+}
+.separation {
+   margin-top: 50px;
+}
+
+.section3 {
+   padding-top: 48px;
+}
+
+/* Page about */
+
+.wrapper_about1{
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.grid__item--about1 {
+  width : 90%;
+  max-width : 1100px;
+  margin : 0 auto;
+}
+
+.wrapper_about2{
+  background-color: #f7f7f7;
+  padding : 20px 0px;
+}
+
+.grid__item--about2 {
+background-color: white;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.atelier_about {
+  padding-bottom: 40px;
+}
+
+.button_about {
+  background-color: #39d6c0;
+  border-radius: 5px;
+  font-size : 16px;
+  width: 110px;
+  color : white;
+  margin : auto;
+  display : block;
+  padding : 16 32px;
+  vertical-align: baseline;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+.button_about a:hover {
+  background-color: #03a48f;
+}
+
+.image_about {
+  display: block;
+  margin: auto;
+  float: inline-start;
+  max-width: 100%;
+  margin-top: -40px;
+}
+
+
+/* Page services */
+
+.section_1{
+ padding-bottom: 40px;
+ padding-top: 40px ;
+ background-color: #f7f7f7;
+}
+.grid__item--backgroundImage {
+ background-position: center;
+ background-size: cover;
+ height: 100%;
+}
+.grid__padding {
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+.domicile--photo {
+ background-image: url('images/services-01.jpg');
+  background-position: center;
+}
+.img-support {
+ background-image: url('images/services-02.jpg');
+}
+.style-des-titres-services{
+ font-size : 40px;
+}
+.style-texte-section{
+ text-align: justify;
+}
+.padding-section {
+ padding: 50px 0;
+}
+
+
+
+/* Footer */
+.footer {
+   background-color: black;
+   color: white;
+   align-items: center;
+   display: flex;
+   margin-top: 48px;
+   height: 350px;
+}
+.adresse{
+   font-style: italic;
+   color: grey;
+}
+.footer .wrapper {
+   display: inline-flex;
+}
+.footer__footer1 {
+   flex-basis: 50%;
+   align-items: center;
+   flex-direction: column;
+}
+.lienfooter {
+   color: #39d6c0;
+   text-decoration: none;
+   font-family: 'Muli', Arial, sans-serif;
+   line-height: 2;
+}
+.button3 {
+   display: flex;
+   flex-direction: column;
+   font-family: 'Muli', Arial, sans-serif;
+   font-size: 16px;
+   justify-content: center;
+}
+/* Fin footer */
+
+
+/* Affichage tablette */
+@media screen and (min-width: 679px) and (max-width: 769px) {
+  .nav__link:focus  {
+    background-color: #232425;
+    display: block;
+    color: white;
+    width:100%;
+  }
+  /* Page index.html */
+  .home-section {
+       background-image:
+       linear-gradient(to right, #fff 0%, #fff 50%, rgba(255, 255, 255, 0) 50%),
+       url(image/home-01.jpg);
+       height: 1100px;
+       background-position: center;
+   }
+   .grid__item--1-2\@medium {
+       flex-basis: 50%;
+       flex-direction: column;
+   }
+   .home-section1 {
+       height: 1300px;
+   }
+
+/* Page about.html */
+  .wrapper_about2{
+    background-color: white;
+  }
+
+/* Page services.html */
+.grid--gutters {
+   flex-direction: column;
+   align-items: center;
+   flex-basis : 100%;
+ }
+}
+
+
+/*Affichage mobile*/
+@media screen and (max-width: 679px) {
+  .header .wrapper {
+    flex-direction: column;
+    align-items: center;
+    width : 100%;
+    margin : 0 auto;
+  }
+
+  .nav {
+    width: 100%;
+    padding-top: 40px;
+    justify-content: center;
+  }
+
+  .nav__list {
+    font-family: 'Pathway Gothic One', sans-serif;
+    flex-direction: column;
+    padding-left: 0px;
+    letter-spacing: 2px;
+  }
+
+  .nav__item {
+    width: 100%;
+    height: 50px;
+  }
+
+  .nav__link {
+    display: block;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    height: 45px;
+    padding-top: 20px;
+  }
+
+  .nav__link:focus  {
+    background-color: #232425;
+    display: block;
+    color: white;
+    width:100%;
+  }
+
+  .footer .wrapper {
+    flex-direction: column;
+    height: 340px;
+  }
+
+/*Page index.html */
+.homeH1 {
+       font-size: 64px;
+       display: flex;
+       text-align: center;
+       width: 100%;
+   }
+   .home-section {
+       background-image:
+       linear-gradient(to bottom, #fff 0%, #fff 50%, rgba(255, 255, 255, 0) 50%),
+       url(image/home-01.jpg);
+       height: 800px;
+       background-position: center;
+   }
+   .home-section .wrapper {
+       display: flex;
+       align-items: flex-start;
+   }
+   .grid__item--1-1\@small {
+       flex-basis: 100%;
+       flex-direction: column;
+   }
+   .home-section1 {
+       height: 1850px;
+   }
+   .grid--gutters .grid__item--1-1\@small {
+       padding: 16px 0px;
+       box-sizing: border-box;
+   }
+   .photo5 {
+       height: 400px;
+   }
+   .photo6 {
+       height: 400px;
+   }
+   .photo7 {
+       height: 400px;
+   }
+
+/*Page about.html */
+  .grid_about .grid__item--1-2 {
+    flex-basis: 100%;
+  }
+  .wrapper_about2{
+    background-color: white;
+  }
+
+/*Page services.html */
+.h1 {
+   font-size: 64px;
+      display: flex;
+      text-align: justify;
+      width: 100%;
+ }
+
+ .grid__item {
+   flex-direction: column;
+   align-items: center;
+   flex-basis : 100%;
+ }
+}
